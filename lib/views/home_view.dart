@@ -5,6 +5,16 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Column(children: [Text('Push Notifications')]));
+    return const Scaffold(
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            SizedBox(height: 30),
+            Text('Push Notifications', style: TextStyle(fontSize: 20)),
+          ],
+        ),
+      ),
+    );
   }
 }
